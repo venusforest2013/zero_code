@@ -6,7 +6,7 @@ func InsertSort(arr []int) {
 	if n <= 1 {
 		return
 	}
-	//循环右移
+	//循环向右移动
 	for i := 1; i < n; i++ {
 		temp := arr[i]
 		key := i - 1
@@ -16,4 +16,5 @@ func InsertSort(arr []int) {
 		}
 		arr[key+1] = temp
 	}
+
 }

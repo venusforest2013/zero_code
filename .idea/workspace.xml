@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12048108-d187-433b-8aa6-dce2893fe1db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/prime/prime.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sort/bubble_sort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sort/bubble_sort_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sort/heap_sort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sort/heap_sort_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sort/lru.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sort/merge_sort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sort/merge_sort_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sort/quick_sort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sort/quick_sort_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sort/select_sort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sort/select_sort_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sort/insert_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/sort/insert_sort.go" afterDir="false" />
-    </list>
+    <list default="true" id="12048108-d187-433b-8aa6-dce2893fe1db" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +37,12 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
-  <component name="RunManager" selected="Go Test.TestHeapSort in github.com/venusforest2013/zero_code/sort">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/prime" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Test.TestProcessPrime in github.com/venusforest2013/zero_code/prime">
     <configuration name="TestBubbleSort in github.com/venusforest2013/zero_code/sort" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="zero_code" />
       <working_directory value="$PROJECT_DIR$/sort" />
@@ -86,6 +76,17 @@
       <pattern value="^\QTestMergeSort\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestProcessPrime in github.com/venusforest2013/zero_code/prime" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="zero_code" />
+      <working_directory value="$PROJECT_DIR$/prime" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/venusforest2013/zero_code/prime" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestProcessPrime\E$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestQuickSort in github.com/venusforest2013/zero_code/sort" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="zero_code" />
       <working_directory value="$PROJECT_DIR$/sort" />
@@ -97,24 +98,13 @@
       <pattern value="^\QTestQuickSort\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestSelectSort in github.com/venusforest2013/zero_code/sort" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="zero_code" />
-      <working_directory value="$PROJECT_DIR$/sort" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="github.com/venusforest2013/zero_code/sort" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestSelectSort\E$" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestProcessPrime in github.com/venusforest2013/zero_code/prime" />
         <item itemvalue="Go Test.TestHeapSort in github.com/venusforest2013/zero_code/sort" />
         <item itemvalue="Go Test.TestMergeSort in github.com/venusforest2013/zero_code/sort" />
         <item itemvalue="Go Test.TestQuickSort in github.com/venusforest2013/zero_code/sort" />
         <item itemvalue="Go Test.TestBubbleSort in github.com/venusforest2013/zero_code/sort" />
-        <item itemvalue="Go Test.TestSelectSort in github.com/venusforest2013/zero_code/sort" />
       </list>
     </recent_temporary>
   </component>
@@ -123,38 +113,38 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1750" height="286" key="GridCell.Tab.0.bottom" timestamp="1634015266905">
+    <state width="1750" height="353" key="GridCell.Tab.0.bottom" timestamp="1634020572803">
       <screen x="0" y="23" width="1792" height="1046" />
     </state>
-    <state width="1750" height="286" key="GridCell.Tab.0.bottom/-591.-1057.1920.1057/0.23.1792.1046@0.23.1792.1046" timestamp="1634015266905" />
-    <state width="1750" height="286" key="GridCell.Tab.0.center" timestamp="1634015266905">
+    <state width="1750" height="353" key="GridCell.Tab.0.bottom/-591.-1057.1920.1057/0.23.1792.1046@0.23.1792.1046" timestamp="1634020572803" />
+    <state width="1750" height="353" key="GridCell.Tab.0.center" timestamp="1634020572803">
       <screen x="0" y="23" width="1792" height="1046" />
     </state>
-    <state width="1750" height="286" key="GridCell.Tab.0.center/-591.-1057.1920.1057/0.23.1792.1046@0.23.1792.1046" timestamp="1634015266905" />
-    <state width="1750" height="286" key="GridCell.Tab.0.left" timestamp="1634015266904">
+    <state width="1750" height="353" key="GridCell.Tab.0.center/-591.-1057.1920.1057/0.23.1792.1046@0.23.1792.1046" timestamp="1634020572803" />
+    <state width="1750" height="353" key="GridCell.Tab.0.left" timestamp="1634020572803">
       <screen x="0" y="23" width="1792" height="1046" />
     </state>
-    <state width="1750" height="286" key="GridCell.Tab.0.left/-591.-1057.1920.1057/0.23.1792.1046@0.23.1792.1046" timestamp="1634015266904" />
-    <state width="1750" height="286" key="GridCell.Tab.0.right" timestamp="1634015266905">
+    <state width="1750" height="353" key="GridCell.Tab.0.left/-591.-1057.1920.1057/0.23.1792.1046@0.23.1792.1046" timestamp="1634020572803" />
+    <state width="1750" height="353" key="GridCell.Tab.0.right" timestamp="1634020572803">
       <screen x="0" y="23" width="1792" height="1046" />
     </state>
-    <state width="1750" height="286" key="GridCell.Tab.0.right/-591.-1057.1920.1057/0.23.1792.1046@0.23.1792.1046" timestamp="1634015266905" />
-    <state width="1750" height="353" key="GridCell.Tab.1.bottom" timestamp="1634015199691">
+    <state width="1750" height="353" key="GridCell.Tab.0.right/-591.-1057.1920.1057/0.23.1792.1046@0.23.1792.1046" timestamp="1634020572803" />
+    <state width="1750" height="353" key="GridCell.Tab.1.bottom" timestamp="1634020572804">
       <screen x="0" y="23" width="1792" height="1046" />
     </state>
-    <state width="1750" height="353" key="GridCell.Tab.1.bottom/-591.-1057.1920.1057/0.23.1792.1046@0.23.1792.1046" timestamp="1634015199691" />
-    <state width="1750" height="353" key="GridCell.Tab.1.center" timestamp="1634015199690">
+    <state width="1750" height="353" key="GridCell.Tab.1.bottom/-591.-1057.1920.1057/0.23.1792.1046@0.23.1792.1046" timestamp="1634020572804" />
+    <state width="1750" height="353" key="GridCell.Tab.1.center" timestamp="1634020572804">
       <screen x="0" y="23" width="1792" height="1046" />
     </state>
-    <state width="1750" height="353" key="GridCell.Tab.1.center/-591.-1057.1920.1057/0.23.1792.1046@0.23.1792.1046" timestamp="1634015199690" />
-    <state width="1750" height="353" key="GridCell.Tab.1.left" timestamp="1634015199690">
+    <state width="1750" height="353" key="GridCell.Tab.1.center/-591.-1057.1920.1057/0.23.1792.1046@0.23.1792.1046" timestamp="1634020572804" />
+    <state width="1750" height="353" key="GridCell.Tab.1.left" timestamp="1634020572804">
       <screen x="0" y="23" width="1792" height="1046" />
     </state>
-    <state width="1750" height="353" key="GridCell.Tab.1.left/-591.-1057.1920.1057/0.23.1792.1046@0.23.1792.1046" timestamp="1634015199690" />
-    <state width="1750" height="353" key="GridCell.Tab.1.right" timestamp="1634015199691">
+    <state width="1750" height="353" key="GridCell.Tab.1.left/-591.-1057.1920.1057/0.23.1792.1046@0.23.1792.1046" timestamp="1634020572804" />
+    <state width="1750" height="353" key="GridCell.Tab.1.right" timestamp="1634020572804">
       <screen x="0" y="23" width="1792" height="1046" />
     </state>
-    <state width="1750" height="353" key="GridCell.Tab.1.right/-591.-1057.1920.1057/0.23.1792.1046@0.23.1792.1046" timestamp="1634015199691" />
+    <state width="1750" height="353" key="GridCell.Tab.1.right/-591.-1057.1920.1057/0.23.1792.1046@0.23.1792.1046" timestamp="1634020572804" />
     <state x="561" y="255" width="670" height="676" key="search.everywhere.popup" timestamp="1634020050147">
       <screen x="0" y="23" width="1792" height="1046" />
     </state>

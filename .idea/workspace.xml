@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12048108-d187-433b-8aa6-dce2893fe1db" name="Default Changelist" comment="" />
+    <list default="true" id="12048108-d187-433b-8aa6-dce2893fe1db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/token_bucket/token_bucket.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/token_bucket/token_bucket_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,18 +46,7 @@
       <recent name="$PROJECT_DIR$/prime" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestProcessPrime in github.com/venusforest2013/zero_code/prime">
-    <configuration name="TestBubbleSort in github.com/venusforest2013/zero_code/sort" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="zero_code" />
-      <working_directory value="$PROJECT_DIR$/sort" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="github.com/venusforest2013/zero_code/sort" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestBubbleSort\E$" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Test.TestTokenBucket in github.com/venusforest2013/zero_code/token_bucket">
     <configuration name="TestHeapSort in github.com/venusforest2013/zero_code/sort" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="zero_code" />
       <working_directory value="$PROJECT_DIR$/sort" />
@@ -98,13 +91,24 @@
       <pattern value="^\QTestQuickSort\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestTokenBucket in github.com/venusforest2013/zero_code/token_bucket" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="zero_code" />
+      <working_directory value="$PROJECT_DIR$/token_bucket" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/venusforest2013/zero_code/token_bucket" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestTokenBucket\E$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestTokenBucket in github.com/venusforest2013/zero_code/token_bucket" />
         <item itemvalue="Go Test.TestProcessPrime in github.com/venusforest2013/zero_code/prime" />
         <item itemvalue="Go Test.TestHeapSort in github.com/venusforest2013/zero_code/sort" />
         <item itemvalue="Go Test.TestMergeSort in github.com/venusforest2013/zero_code/sort" />
         <item itemvalue="Go Test.TestQuickSort in github.com/venusforest2013/zero_code/sort" />
-        <item itemvalue="Go Test.TestBubbleSort in github.com/venusforest2013/zero_code/sort" />
       </list>
     </recent_temporary>
   </component>
@@ -113,22 +117,22 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1750" height="353" key="GridCell.Tab.0.bottom" timestamp="1634020572803">
+    <state width="1750" height="286" key="GridCell.Tab.0.bottom" timestamp="1635150111844">
       <screen x="0" y="23" width="1792" height="1046" />
     </state>
-    <state width="1750" height="353" key="GridCell.Tab.0.bottom/-591.-1057.1920.1057/0.23.1792.1046@0.23.1792.1046" timestamp="1634020572803" />
-    <state width="1750" height="353" key="GridCell.Tab.0.center" timestamp="1634020572803">
+    <state width="1750" height="286" key="GridCell.Tab.0.bottom/-591.-1057.1920.1057/0.23.1792.1046@0.23.1792.1046" timestamp="1635150111844" />
+    <state width="1750" height="286" key="GridCell.Tab.0.center" timestamp="1635150111843">
       <screen x="0" y="23" width="1792" height="1046" />
     </state>
-    <state width="1750" height="353" key="GridCell.Tab.0.center/-591.-1057.1920.1057/0.23.1792.1046@0.23.1792.1046" timestamp="1634020572803" />
-    <state width="1750" height="353" key="GridCell.Tab.0.left" timestamp="1634020572803">
+    <state width="1750" height="286" key="GridCell.Tab.0.center/-591.-1057.1920.1057/0.23.1792.1046@0.23.1792.1046" timestamp="1635150111843" />
+    <state width="1750" height="286" key="GridCell.Tab.0.left" timestamp="1635150111842">
       <screen x="0" y="23" width="1792" height="1046" />
     </state>
-    <state width="1750" height="353" key="GridCell.Tab.0.left/-591.-1057.1920.1057/0.23.1792.1046@0.23.1792.1046" timestamp="1634020572803" />
-    <state width="1750" height="353" key="GridCell.Tab.0.right" timestamp="1634020572803">
+    <state width="1750" height="286" key="GridCell.Tab.0.left/-591.-1057.1920.1057/0.23.1792.1046@0.23.1792.1046" timestamp="1635150111842" />
+    <state width="1750" height="286" key="GridCell.Tab.0.right" timestamp="1635150111843">
       <screen x="0" y="23" width="1792" height="1046" />
     </state>
-    <state width="1750" height="353" key="GridCell.Tab.0.right/-591.-1057.1920.1057/0.23.1792.1046@0.23.1792.1046" timestamp="1634020572803" />
+    <state width="1750" height="286" key="GridCell.Tab.0.right/-591.-1057.1920.1057/0.23.1792.1046@0.23.1792.1046" timestamp="1635150111843" />
     <state width="1750" height="353" key="GridCell.Tab.1.bottom" timestamp="1634020572804">
       <screen x="0" y="23" width="1792" height="1046" />
     </state>

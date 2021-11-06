@@ -2,27 +2,21 @@ package tree
 
 import "math"
 
+//判断二叉搜索树是否合法
+func isValidBST(root *TreeNode) bool {
+	return helper(root, math.MinInt64, math.MaxInt64)
 
-
-func IsValid(root *TreeNode) bool {
-	return IsValidHelper(root, math.MinInt32, math.MaxInt32)
 }
 
-func IsValidHelper(root *TreeNode, min, max int) bool {
+func helper(root *TreeNode, lower, upper int) bool {
 	if root == nil {
 		return true
-	}
 
-	if root.Left == nil && root.Right == nil {
-		return true
 	}
-
-	if root.Left != nil && (root.Left.Val > root.Val || root.Val < min) {
+	if root.Val <= lower || root.Val >= upper {
 		return false
-	}
 
-	if root.Right != nil && (root.Right.Val < root.Val || root.Val > max) {
-		return false
 	}
-	return true
+	return helper(root.Left, lower, root.Val) && helper(root.Right, root.Val, upper)
+
 }

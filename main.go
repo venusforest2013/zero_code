@@ -5,6 +5,6 @@ import (
 )
 
 func main() {
-	result := link_list.GetKthFromLast(link_list.SampleListNode, 3)
+	result := link_list.ReverseNeighbour(link_list.SampleListNode)
 	link_list.PrintLinkList(result)
 }

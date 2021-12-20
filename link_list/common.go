@@ -29,11 +29,15 @@ func init() {
 	node6 := &ListNode{
 		Data: 6,
 	}
+	node7 := &ListNode{
+		Data: 7,
+	}
 	node1.Next = node2
 	node2.Next = node3
 	node3.Next = node4
 	node4.Next = node5
 	node5.Next = node6
+	node6.Next = node7
 	SampleListNode = node1
 
 	node11 := &ListNode{

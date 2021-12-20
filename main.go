@@ -5,6 +5,6 @@ import (
 )
 
 func main() {
-	result := link_list.HalfMerge(link_list.SampleListNode)
+	result := link_list.GetKthFromLast(link_list.SampleListNode, 3)
 	link_list.PrintLinkList(result)
 }

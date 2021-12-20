@@ -5,6 +5,7 @@ import (
 )
 
 func main() {
-	result := link_list.ReverseNeighbour(link_list.SampleListNode)
+	link_list.PrintLinkList(link_list.SampleListNode)
+	result := link_list.ReverseK(link_list.SampleListNode, 3)
 	link_list.PrintLinkList(result)
 }

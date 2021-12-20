@@ -10,7 +10,12 @@ type ListNode struct {
 var SampleListNode *ListNode
 var SampleListNode2 *ListNode
 
-func init() {
+var NodeDel = &ListNode{
+	Data: 100,
+}
+
+func Init() {
+
 	node1 := &ListNode{
 		Data: 1,
 	}
@@ -18,7 +23,7 @@ func init() {
 		Data: 2,
 	}
 	node3 := &ListNode{
-		Data: 13,
+		Data: 3,
 	}
 	node4 := &ListNode{
 		Data: 4,
@@ -36,7 +41,8 @@ func init() {
 	node2.Next = node3
 	node3.Next = node4
 	node4.Next = node5
-	node5.Next = node6
+	node5.Next = NodeDel
+	NodeDel.Next = node6
 	node6.Next = node7
 	SampleListNode = node1
 

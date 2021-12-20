@@ -17,7 +17,7 @@ func init() {
 		Data: 2,
 	}
 	node3 := &ListNode{
-		Data: 3,
+		Data: 2,
 	}
 	node4 := &ListNode{
 		Data: 4,

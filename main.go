@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	link_list.PrintLinkList(link_list.SampleListNode)
-	result := link_list.ReverseK(link_list.SampleListNode, 3)
+
+	result := link_list.MergeSortedLinkList(link_list.SampleListNode, link_list.SampleListNode2)
 	link_list.PrintLinkList(result)
 }

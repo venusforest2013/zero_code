@@ -25,25 +25,10 @@ func Init() {
 	node3 := &ListNode{
 		Data: 3,
 	}
-	node4 := &ListNode{
-		Data: 4,
-	}
-	node5 := &ListNode{
-		Data: 5,
-	}
-	node6 := &ListNode{
-		Data: 6,
-	}
-	node7 := &ListNode{
-		Data: 7,
-	}
+
 	node1.Next = node2
-	node2.Next = node3
-	node3.Next = node4
-	node4.Next = node5
-	node5.Next = NodeDel
-	NodeDel.Next = node6
-	node6.Next = node7
+	node2.Next = NodeDel
+	NodeDel.Next = node3
 	SampleListNode = node1
 
 	node11 := &ListNode{
@@ -52,19 +37,9 @@ func Init() {
 	node12 := &ListNode{
 		Data: 12,
 	}
-	node13 := &ListNode{
-		Data: 13,
-	}
-	node14 := &ListNode{
-		Data: 14,
-	}
-	node15 := &ListNode{
-		Data: 15,
-	}
+
 	node11.Next = node12
-	node12.Next = node13
-	node13.Next = node14
-	node14.Next = node15
+	node12.Next = NodeDel
 	SampleListNode2 = node11
 }
 

@@ -8,8 +8,7 @@ import (
 func main() {
 
 	link_list.Init()
-	link_list.PrintLinkList(link_list.SampleListNode)
-	result := link_list.RemoveSpecificNode(link_list.SampleListNode, link_list.NodeDel)
+	result := link_list.GetIntersectionNode(link_list.SampleListNode, link_list.SampleListNode2)
 	fmt.Println("哈哈")
 	link_list.PrintLinkList(result)
 }

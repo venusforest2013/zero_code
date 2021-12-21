@@ -2,13 +2,18 @@ package main
 
 import (
 	"fmt"
-	"github.com/venusforest2013/zero_code/link_list"
+
+	"github.com/venusforest2013/zero_code/stack"
 )
 
 func main() {
 
-	link_list.Init()
-	result := link_list.GetIntersectionNode(link_list.SampleListNode, link_list.SampleListNode2)
-	fmt.Println("哈哈")
-	link_list.PrintLinkList(result)
+	s := &stack.LinkStack{}
+	s.Push(1)
+	s.Push(2)
+	s.PrintStack()
+	ret := s.Pop()
+	fmt.Println(ret)
+	fmt.Println("====")
+	s.PrintStack()
 }

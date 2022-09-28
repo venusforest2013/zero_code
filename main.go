@@ -1,11 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/venusforest2013/zero_code/search"
+)
 
 func main() {
-	arr := []int{6, 5, 4, 3}
-	heapSort(arr)
-	fmt.Println(arr)
+	arr := []int{1, 2, 3, 4, 4, 5}
+	ret := search.BinSearchRight(arr, 4)
+	fmt.Println(ret)
 }
 
 func heapify(arr []int, pos, count int) {

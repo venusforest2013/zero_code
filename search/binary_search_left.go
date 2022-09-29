@@ -20,7 +20,7 @@ func BinSearchLeft(arr []int, target int) int {
 		}
 	}
 
-	if left < n-1 && arr[left] != target {
+	if left >= n || (left < n && arr[left] != target) {
 		return -1
 	}
 	return left

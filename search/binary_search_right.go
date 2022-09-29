@@ -18,7 +18,7 @@ func BinSearchRight(arr []int, target int) int {
 			left = mid + 1
 		}
 	}
-	if right >= 0 && arr[right] != target {
+	if right < 0 || (right >= 0 && arr[right] != target) {
 		return -1
 	}
 	return right

@@ -1,7 +1,7 @@
 package main
 
-import "github.com/venusforest2013/zero_code/stack"
+import "github.com/venusforest2013/zero_code/trace"
 
 func main() {
-	stack.ReverseStackExample()
+	trace.EightQueueExample()
 }

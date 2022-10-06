@@ -1,7 +1,7 @@
 package main
 
-import "github.com/venusforest2013/zero_code/trace"
+import "github.com/venusforest2013/zero_code/prime"
 
 func main() {
-	trace.EightQueueExample()
+	prime.IsPrimeExample()
 }

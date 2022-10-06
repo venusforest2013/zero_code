@@ -1,6 +1,9 @@
 package stack
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 type StackNode struct {
 	data int
@@ -43,4 +46,15 @@ func (z *LinkStack) PrintStack() {
 		fmt.Println(cur.data)
 		cur = cur.prev
 	}
+}
+func (z *LinkStack) IsEmpty() bool {
+	return z.size == 0
+
+}
+func (z *LinkStack) Peek() (int, error) {
+	if z.size == 0 {
+		return 0, errors.New("stack empty")
+	}
+	return z.top.data, nil
+
 }

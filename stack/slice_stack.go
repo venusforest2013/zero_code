@@ -30,10 +30,14 @@ func (z *SliceStack) Pop() (int, error) {
 }
 
 func (z *SliceStack) PrintStack() {
-
-	for _, v := range z.arr {
-		fmt.Println(v)
+	n := len(z.arr)
+	if n == 0 {
+		return
 	}
+	for i := n - 1; i >= 0; i-- {
+		fmt.Println(z.arr[i])
+	}
+
 }
 func (z *SliceStack) Peek() (int, error) {
 

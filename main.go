@@ -2,12 +2,16 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/venusforest2013/zero_code/search"
 )
 
 func main() {
-	arr := []int{1, 2, 3, 4, 4, 5}
-	ret := search.BinSearchLeft(arr, 60)
+	a := 3
+	ret := onesCount(a)
 	fmt.Println(ret)
+}
+func onesCount(x int) (ones int) {
+	for ; x > 0; x &= x - 1 {
+		ones++
+	}
+	return
 }

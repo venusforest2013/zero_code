@@ -30,3 +30,28 @@ func GetLongestNoRepeatSubString(str string) string {
 	return str[firstIndex:max]
 
 }
+
+func LengthOfLongestSubstring(s string) int {
+	n := len(s)
+	if n == 0 {
+		return 0
+	}
+	mp := make(map[byte]int, 0)
+	left := 0
+	ret := 0
+	for i := 0; i < n; i++ {
+		if index, ok := mp[s[i]]; ok {
+			//存在
+			if left < index+1 {
+				left = index + 1
+			}
+
+		}
+		mp[s[i]] = i
+		if i-left+1 > ret {
+			ret = i - left + 1
+		}
+	}
+
+	return ret
+}

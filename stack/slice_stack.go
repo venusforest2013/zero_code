@@ -9,17 +9,13 @@ type SliceStack struct {
 	arr []int
 }
 
-func NewSliceStatck() *SliceStack {
-	arr := make([]int, 0)
-	s := &SliceStack{
-		arr: arr,
-	}
-	return s
-}
-
 func (z *SliceStack) Push(element int) {
 	z.arr = append(z.arr, element)
 
+}
+
+func (z *SliceStack) IsEmpty() bool {
+	return len(z.arr) == 0
 }
 
 func (z *SliceStack) Pop() (int, error) {

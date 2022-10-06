@@ -28,16 +28,16 @@ func (z *LinkStack) Push(element int) {
 	z.size++
 }
 
-func (z *LinkStack) Pop() int {
+func (z *LinkStack) Pop() (int, error) {
 	if z.size == 0 {
-		return 0
+		return 0, errors.New("stack empty")
 	}
 
 	ret := z.top.data
 	z.top = z.top.prev
 	z.size--
 
-	return ret
+	return ret, nil
 }
 
 func (z *LinkStack) PrintStack() {

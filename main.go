@@ -1,7 +1,7 @@
 package main
 
-import "github.com/venusforest2013/zero_code/prime"
+import "github.com/venusforest2013/zero_code/dynamic"
 
 func main() {
-	prime.IsPrimeExample()
+	dynamic.CoinsExample()
 }

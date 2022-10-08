@@ -1,7 +1,7 @@
 package main
 
-import "github.com/venusforest2013/zero_code/dynamic"
+import "github.com/venusforest2013/zero_code/trace"
 
 func main() {
-	dynamic.CoinsExample()
+	trace.ZeroOneBagExample()
 }

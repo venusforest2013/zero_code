@@ -36,7 +36,7 @@ func DeleteNode(root *TreeNode, data int) {
 	if p.Left != nil && p.Right != nil {
 		minP := p.Right
 		minPP := p
-		for minP != nil {
+		for minP.Left != nil {
 
 			minPP = minP
 			minP = minP.Left

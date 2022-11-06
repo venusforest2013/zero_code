@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/venusforest2013/zero_code/dynamic"
+	"github.com/venusforest2013/zero_code/tree"
 )
 
 func main() {
-	dynamic.GetMaxIncreasedSubSeqLenExample()
+	tree.DeleteNodeExample()
 }
 
 // weight:物品重量，n:物品个数，w:背包可承载重量

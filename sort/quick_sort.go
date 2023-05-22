@@ -1,37 +1,37 @@
 package sort
 
-func partition(list []int, low, high int) int {
-	pivot := list[low] //导致 low 位置值为空
-	for low < high {
-		//high指针值 >= pivot high指针👈移
-		for low < high && pivot <= list[high] {
-			high--
-		}
-		//填补low位置空值
-		//high指针值 < pivot high值 移到low位置
-		//high 位置值空
-		list[low] = list[high]
-		//low指针值 <= pivot low指针👉移
-		for low < high && pivot >= list[low] {
-			low++
-		}
-		//填补high位置空值
-		//low指针值 > pivot low值 移到high位置
-		//low位置值空
-		list[high] = list[low]
+// 快速排序入口函数
+func quickSort(nums []int, p int, r int) {
+	// 递归终止条件
+	if p >= r {
+		return
 	}
-	//pivot 填补 low位置的空值
-	list[low] = pivot
-	return low
+	// 获取分区位置
+	q := partition(nums, p, r)
+	// 递归分区（排序是在定位 pivot 的过程中实现的）
+	quickSort(nums, p, q-1)
+	quickSort(nums, q+1, r)
 }
 
-func QuickSort(list []int, low, high int) {
-	if high > low {
-		//位置划分
-		pivot := partition(list, low, high)
-		//左边部分排序
-		QuickSort(list, low, pivot-1)
-		//右边排序
-		QuickSort(list, pivot+1, high)
+// 定位 pivot
+func partition(nums []int, p int, r int) int {
+	// 以当前数据序列最后一个元素作为初始 pivot
+	pivot := nums[r]
+	// 初始化 i、j 下标
+	i := p
+	// 后移 j 下标的遍历过程
+	for j := p; j < r; j++ {
+		// 将比 pivot 小的数丢到 [p...i-1] 中，剩下的 [i...j] 区间都是比 pivot 大的
+		if nums[j] < pivot {
+			// 互换 i、j 下标对应数据
+			nums[i], nums[j] = nums[j], nums[i]
+			// 将 i 下标后移一位
+			i++
+		}
 	}
+	// 最后将 pivot 与 i 下标对应数据值互换
+	// 这样一来，pivot 就位于当前数据序列中间，i 也就是 pivot 值对应的下标
+	nums[i], nums[r] = pivot, nums[i]
+	// 返回 i 作为 pivot 分区位置
+	return i
 }

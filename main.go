@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	tree.DeleteNodeExample()
+	tree.CreateBST2Examaple()
 }
 
 // weight:物品重量，n:物品个数，w:背包可承载重量

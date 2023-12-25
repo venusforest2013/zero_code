@@ -2,12 +2,30 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/venusforest2013/zero_code/tree"
+	"github.com/venusforest2013/zero_code/link_list"
 )
 
 func main() {
-	tree.CreateBST2Examaple()
+	//tree.CreateBST2Examaple()
+	ret := IsCycleLinkList(link_list.SampleListNode3)
+	fmt.Println(ret)
+}
+
+func IsCycleLinkList(node *link_list.ListNode) bool {
+	if node == nil || node.Next == nil {
+		return false
+	}
+	slow := node
+	fast := node.Next
+
+	for fast != nil && fast.Next != nil {
+		slow = slow.Next
+		fast = fast.Next.Next
+		if slow == fast {
+			return true
+		}
+	}
+	return false
 }
 
 // weight:物品重量，n:物品个数，w:背包可承载重量

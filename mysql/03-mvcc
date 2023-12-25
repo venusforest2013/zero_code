@@ -1,0 +1,9 @@
+博客：https://github.com/lifei6671/interview-go/blob/master/mysql/mysql-mvcc.md
+四个事务隔离级别：读未提交，读已提交，可重复读，串行化
+隐藏咧：row_id,tx_id,undo_log指针
+可见性算法：current_tx_id,read_view,undo_log_ptr
+    1.未提交的，不可见
+    2.已提交，创建之前，可见
+    3.已提交，创建之后，不可见
+select: 使用一致性读
+update: 需要加行锁，使用当前读

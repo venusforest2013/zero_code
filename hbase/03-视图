@@ -1,0 +1,14 @@
+逻辑视图
+1.table
+2.row
+3.column
+4.timestamp
+5.cell
+
+cell 组成
+row, column, timestamp, type => value
+
+物理视图
+按照列蔟存储
+稀疏map
+不需要存储null

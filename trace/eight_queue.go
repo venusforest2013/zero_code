@@ -12,17 +12,21 @@ func EightQueueExample() {
 func solveNQueens(n int) [][]string {
 	var solutions [][]string
 	solutions = [][]string{}
+	//记录每一行中那一列被占坑
 	queens := make([]int, n)
 	for i := 0; i < n; i++ {
 		queens[i] = -1
 	}
+	//记录列是否被占坑
 	columns := map[int]bool{}
+	//记录两条斜线是否被占坑
 	diagonals1, diagonals2 := map[int]bool{}, map[int]bool{}
 	backtrack(queens, n, 0, columns, diagonals1, diagonals2, &solutions)
 	return solutions
 }
 
 func backtrack(queens []int, n, row int, columns, diagonals1, diagonals2 map[int]bool, solutions *[][]string) {
+	//按照行进行回溯，回溯完毕绘图
 	if row == n {
 		board := generateBoard(queens, n)
 		*solutions = append(*solutions, board)
